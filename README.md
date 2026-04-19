@@ -6,7 +6,7 @@ A hand-rolled, zero-dependency React component library built to demonstrate seni
 
 Most modern design systems wrap [Radix Primitives](https://www.radix-ui.com/) and call it a day. That's a fine *consumer* skillset. This library demonstrates the *author* skillset: building accessible behavior primitives from the WAI-ARIA Authoring Practices, with focus management, keyboard handling, and ARIA relationships hand-implemented and tested.
 
-See [`AI.md`](./AI.md) for how AI was used vs. what was authored manually.
+See [`ai.md`](./documentations/ai.md) for how AI was used vs. what was authored manually.
 
 ## What's inside
 
@@ -28,19 +28,19 @@ See [`AI.md`](./AI.md) for how AI was used vs. what was authored manually.
 - **Tokens** via Style Dictionary v4 (JSON → CSS custom properties)
 - **Multi-brand**: Atelier (red/teal) and Neutral (blue/gray) via `data-brand` attribute
 - **Light/dark** via `.dark` class
-- **Hex colors** throughout (intentional choice over HSL — see [`DECISIONS.md`](./DECISIONS.md))
+- **Hex colors** throughout (intentional choice over HSL — see [`decisions.md`](./documentations/decisions.md))
 
 ## Install
 
 ```bash
-npm install atelier-primitives
+npm install atelier-design-system
 ```
 
 ## Usage
 
 ```tsx
-import { AtelierButton, AtelierDialog } from "atelier-primitives";
-import "atelier-primitives/style.css";
+import { AtelierButton, AtelierDialog } from "atelier-design-system";
+import "atelier-design-system/style.css";
 
 export function Example() {
   return (
@@ -69,7 +69,7 @@ Set the brand and theme on a wrapping element:
 
 - React 18 + TypeScript
 - Style Dictionary v4 (token pipeline)
-- CSS Modules (no Tailwind — see [`DECISIONS.md`](./DECISIONS.md))
+- CSS Modules (no Tailwind — see [`decisions.md`](./documentations/decisions.md))
 - `clsx` (only non-React runtime dependency)
 - Vite (dev + library build)
 - Storybook 8 (component workshop)
@@ -99,10 +99,10 @@ Every primitive ships with:
 
 ## Documentation
 
-- [`ROADMAP.md`](./ROADMAP.md) — planned primitives (TextField, Checkbox, RadioGroup, Tabs, Tooltip, Toast, Combobox)
-- [`ARCHITECTURE.md`](./ARCHITECTURE.md) — system layers, drift prevention, multi-brand strategy
-- [`DECISIONS.md`](./DECISIONS.md) — API design decisions with rationale
-- [`AI.md`](./AI.md) — how AI was used, what was manual, impact
+- [`roadmap.md`](./documentations/roadmap.md) — planned primitives (TextField, Checkbox, RadioGroup, Tabs, Tooltip, Toast, Combobox)
+- [`architecture.md`](./documentations/architecture.md) — system layers, drift prevention, multi-brand strategy
+- [`decisions.md`](./documentations/decisions.md) — API design decisions with rationale
+- [`ai.md`](./documentations/ai.md) — how AI was used, what was manual, impact
 
 ## License
 

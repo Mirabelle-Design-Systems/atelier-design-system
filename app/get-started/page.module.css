@@ -1,0 +1,28 @@
+.code {
+  padding: var(--spacing-4);
+  background-color: var(--color-muted);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  color: var(--color-foreground);
+}
+
+.code code {
+  font-family: inherit;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.links li {
+  font-size: var(--font-size-sm);
+  color: var(--color-foreground);
+  line-height: var(--font-line-height-relaxed);
+}

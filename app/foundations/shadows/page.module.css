@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: var(--spacing-6);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-card);
+}
+
+.preview {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--color-surface-elevated);
+  border-radius: var(--radius-md);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-foreground);
+}
+
+.value {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-muted-foreground);
+}
+
+.usage {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted-foreground);
+  margin-top: var(--spacing-1);
+}

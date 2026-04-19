@@ -1,0 +1,12 @@
+{
+  "z": {
+    "hide": { "value": -1, "type": "other" },
+    "base": { "value": 0, "type": "other" },
+    "dropdown": { "value": 1000, "type": "other" },
+    "sticky": { "value": 1100, "type": "other" },
+    "overlay": { "value": 1200, "type": "other" },
+    "modal": { "value": 1300, "type": "other" },
+    "popover": { "value": 1400, "type": "other" },
+    "tooltip": { "value": 1500, "type": "other" }
+  }
+}

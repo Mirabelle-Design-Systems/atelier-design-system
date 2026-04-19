@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  max-width: 24rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1-5);
+}
+
+.fieldLabel {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-foreground);
+}
+
+.fieldInput {
+  height: 2.5rem;
+  padding: 0 var(--spacing-3);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-sans);
+  color: var(--color-foreground);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-input);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.fieldInput:focus {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+.fieldHint {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted-foreground);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-3);
+  padding-top: var(--spacing-2);
+}

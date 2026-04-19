@@ -1,0 +1,183 @@
+/* ---- Shared foundation page styles ---- */
+
+.page {
+  max-width: 48rem;
+  font-family: var(--font-family-sans);
+}
+
+.pageTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-foreground);
+  margin-bottom: var(--spacing-2);
+}
+
+.pageDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted-foreground);
+  line-height: var(--font-line-height-normal);
+  margin-bottom: var(--spacing-8);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-foreground);
+  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-8);
+}
+
+.sectionTitle:first-of-type {
+  margin-top: 0;
+}
+
+/* ---- Color swatches ---- */
+
+.swatchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: var(--spacing-3);
+}
+
+.swatch {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.swatchColor {
+  height: 4rem;
+}
+
+.swatchLabel {
+  padding: var(--spacing-2) var(--spacing-3);
+  background-color: var(--color-background);
+}
+
+.swatchName {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-foreground);
+  display: block;
+}
+
+.swatchValue {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted-foreground);
+  font-family: var(--font-family-mono);
+  display: block;
+  margin-top: 2px;
+}
+
+/* ---- Typography scale ---- */
+
+.typeRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-4);
+  padding: var(--spacing-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.typeLabel {
+  width: 6rem;
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-muted-foreground);
+}
+
+.typeSample {
+  color: var(--color-foreground);
+}
+
+/* ---- Spacing scale ---- */
+
+.spacingRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-2) 0;
+}
+
+.spacingLabel {
+  width: 6rem;
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-muted-foreground);
+}
+
+.spacingBar {
+  height: 1.5rem;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  opacity: 0.7;
+}
+
+.spacingValue {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-muted-foreground);
+  flex-shrink: 0;
+}
+
+/* ---- Radius preview ---- */
+
+.radiusGrid {
+  display: flex;
+  gap: var(--spacing-6);
+  flex-wrap: wrap;
+}
+
+.radiusItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.radiusBox {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--color-primary);
+  opacity: 0.15;
+  border: 2px solid var(--color-primary);
+}
+
+.radiusLabel {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-muted-foreground);
+  text-align: center;
+}
+
+/* ---- Token table ---- */
+
+.tokenTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.tokenTable th {
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-foreground);
+  padding: var(--spacing-2) var(--spacing-3);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.tokenTable td {
+  padding: var(--spacing-2) var(--spacing-3);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-foreground);
+}
+
+.tokenTable code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  background-color: var(--color-muted);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}

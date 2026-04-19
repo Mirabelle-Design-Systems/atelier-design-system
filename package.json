@@ -1,0 +1,70 @@
+{
+  "name": "atelier-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "tokens": "node style-dictionary.config.mjs",
+    "dev": "next dev",
+    "dev:storybook": "storybook dev -p 6006",
+    "build": "npm run tokens && next build",
+    "build:lib": "npm run tokens && tsc -b && vite build",
+    "build-storybook": "npm run tokens && storybook build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest",
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "prepublishOnly": "npm run tokens && npm run build:lib"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "^15.3.2"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.6.14",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^22.15.3",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "chromatic": "^16.3.0",
+    "jsdom": "^29.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "style-dictionary": "^4.4.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4",
+    "vitest-axe": "^0.1.0"
+  }
+}

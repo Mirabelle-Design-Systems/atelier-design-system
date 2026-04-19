@@ -1,0 +1,116 @@
+/* ---- Shared guidelines page styles ---- */
+
+.page {
+  max-width: 48rem;
+  font-family: var(--font-family-sans);
+}
+
+.pageTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-foreground);
+  margin-bottom: var(--spacing-2);
+}
+
+.pageDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted-foreground);
+  line-height: var(--font-line-height-normal);
+  margin-bottom: var(--spacing-8);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-foreground);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-3);
+}
+
+.body {
+  font-size: var(--font-size-sm);
+  color: var(--color-foreground);
+  line-height: var(--font-line-height-normal);
+  margin-bottom: var(--spacing-4);
+}
+
+.list {
+  font-size: var(--font-size-sm);
+  color: var(--color-foreground);
+  line-height: 1.8;
+  padding-left: var(--spacing-5);
+  margin-bottom: var(--spacing-4);
+}
+
+.list li + li {
+  margin-top: var(--spacing-1);
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-5);
+  background-color: var(--color-card);
+  margin-bottom: var(--spacing-4);
+}
+
+.cardTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-foreground);
+  margin-bottom: var(--spacing-2);
+}
+
+.code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  background-color: var(--color-muted);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.codeBlock {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  background-color: var(--color-muted);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  line-height: 1.6;
+  margin: var(--spacing-3) 0;
+  white-space: pre;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-4);
+}
+
+.do {
+  border-left: 3px solid var(--color-secondary);
+  padding-left: var(--spacing-4);
+}
+
+.dont {
+  border-left: 3px solid var(--color-destructive);
+  padding-left: var(--spacing-4);
+}
+
+.doLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-2);
+}
+
+.dontLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-destructive);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-2);
+}

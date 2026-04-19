@@ -1,0 +1,39 @@
+{
+  "color": {
+    "background": { "value": "#1a1a2e", "type": "color" },
+    "foreground": { "value": "#ffffff", "type": "color" },
+
+    "card": { "value": "#16223c", "type": "color" },
+    "card-foreground": { "value": "#ffffff", "type": "color" },
+
+    "popover": { "value": "#16223c", "type": "color" },
+    "popover-foreground": { "value": "#ffffff", "type": "color" },
+
+    "primary": { "value": "#ea435c", "type": "color" },
+    "primary-foreground": { "value": "#ffffff", "type": "color" },
+    "primary-hover": { "value": "#d73c56", "type": "color" },
+    "primary-light": { "value": "#f8b4c5", "type": "color" },
+
+    "secondary": { "value": "#4ccdc4", "type": "color" },
+    "secondary-foreground": { "value": "#1a1a2e", "type": "color" },
+    "secondary-light": { "value": "#81dad4", "type": "color" },
+
+    "muted": { "value": "#1f2e47", "type": "color" },
+    "muted-foreground": { "value": "#9ca3b0", "type": "color" },
+
+    "accent": { "value": "#1f2e47", "type": "color" },
+    "accent-foreground": { "value": "#ffffff", "type": "color" },
+
+    "destructive": { "value": "#dc2828", "type": "color" },
+    "destructive-foreground": { "value": "#fafafa", "type": "color" },
+
+    "border": { "value": "#493e6a", "type": "color" },
+    "input": { "value": "#493e6a", "type": "color" },
+    "ring": { "value": "#ea435c", "type": "color" },
+
+    "warning": { "value": "#ffd53d", "type": "color" },
+    "subtle": { "value": "#6b7280", "type": "color" },
+    "surface-elevated": { "value": "#1f2e47", "type": "color" },
+    "border-light": { "value": "rgba(255, 255, 255, 0.1)", "type": "color" }
+  }
+}

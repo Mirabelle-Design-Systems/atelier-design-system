@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: var(--spacing-4);
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.swatchColor {
+  height: 4rem;
+}
+
+.swatchInfo {
+  padding: var(--spacing-2) var(--spacing-3);
+  background-color: var(--color-card);
+}
+
+.swatchName {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-foreground);
+}
+
+.swatchValue {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-muted-foreground);
+  margin-top: var(--spacing-1);
+}

@@ -1,0 +1,109 @@
+/* ---- Overlay ---- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+/* ---- Dialog panel ---- */
+
+.panel {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 32rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  padding: var(--spacing-6);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: zoomIn var(--transition-normal) forwards;
+}
+
+.panel:focus-visible {
+  outline: none;
+}
+
+/* ---- Close button ---- */
+
+.closeButton {
+  position: absolute;
+  right: var(--spacing-4);
+  top: var(--spacing-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-1);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--color-muted-foreground);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.closeButton:hover {
+  color: var(--color-foreground);
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+/* ---- Header / Footer ---- */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1-5);
+}
+
+.footer {
+  margin-top: var(--spacing-6);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--spacing-2);
+}
+
+/* ---- Title / Description ---- */
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--font-line-height-tight);
+  letter-spacing: -0.01em;
+  color: var(--color-foreground);
+}
+
+.description {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted-foreground);
+  line-height: var(--font-line-height-normal);
+}
+
+/* ---- Animations ---- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

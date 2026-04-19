@@ -1,0 +1,11 @@
+[data-brand="neutral"].dark {
+  --color-primary: #60a5fa;
+  --color-primary-foreground: #0f172a;
+  --color-primary-hover: #93bbfd;
+  --color-primary-light: #bfdbfe;
+  --color-secondary: #9ca3af;
+  --color-secondary-foreground: #0f172a;
+  --color-secondary-light: #d1d5db;
+  --color-ring: #60a5fa;
+  --color-warning: #fbbf24;
+}

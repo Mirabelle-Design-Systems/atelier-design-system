@@ -1,0 +1,7 @@
+{
+  "transition": {
+    "fast": { "value": "150ms ease", "type": "other" },
+    "normal": { "value": "200ms ease", "type": "other" },
+    "slow": { "value": "300ms ease", "type": "other" }
+  }
+}

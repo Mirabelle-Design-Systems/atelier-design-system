@@ -1,0 +1,15 @@
+{
+  "color": {
+    "primary": { "value": "#2563eb", "type": "color" },
+    "primary-foreground": { "value": "#ffffff", "type": "color" },
+    "primary-hover": { "value": "#1d4ed8", "type": "color" },
+    "primary-light": { "value": "#3b82f6", "type": "color" },
+
+    "secondary": { "value": "#6b7280", "type": "color" },
+    "secondary-foreground": { "value": "#ffffff", "type": "color" },
+    "secondary-light": { "value": "#9ca3af", "type": "color" },
+
+    "ring": { "value": "#2563eb", "type": "color" },
+    "warning": { "value": "#d97706", "type": "color" }
+  }
+}

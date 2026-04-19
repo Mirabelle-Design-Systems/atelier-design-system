@@ -1,0 +1,76 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-2);
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: var(--spacing-3) var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+}
+
+.table th {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-muted-foreground);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.doDont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-4);
+}
+
+.doCard,
+.dontCard {
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-normal);
+}
+
+.doCard {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-secondary);
+}
+
+.dontCard {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-destructive);
+}
+
+.cardLabel {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-2);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.doLabel {
+  color: var(--color-secondary);
+}
+
+.dontLabel {
+  color: var(--color-destructive);
+}
+
+.cardContent {
+  color: var(--color-muted-foreground);
+}
+
+.kbd {
+  display: inline-block;
+  padding: var(--spacing-0) var(--spacing-1-5);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  background-color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  line-height: 1.6;
+}

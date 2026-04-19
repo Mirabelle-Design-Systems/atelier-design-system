@@ -1,0 +1,33 @@
+.scale {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.tokenLabel {
+  width: 10rem;
+  flex-shrink: 0;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-muted-foreground);
+}
+
+.bar {
+  height: 1.5rem;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  opacity: 0.7;
+}
+
+.valueLabel {
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-muted-foreground);
+  min-width: 4rem;
+}

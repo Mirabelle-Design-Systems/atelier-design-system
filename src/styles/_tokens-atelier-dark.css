@@ -1,0 +1,28 @@
+:root.dark {
+  --color-background: #1a1a2e;
+  --color-foreground: #ffffff;
+  --color-card: #16223c;
+  --color-card-foreground: #ffffff;
+  --color-popover: #16223c;
+  --color-popover-foreground: #ffffff;
+  --color-primary: #ea435c;
+  --color-primary-foreground: #ffffff;
+  --color-primary-hover: #d73c56;
+  --color-primary-light: #f8b4c5;
+  --color-secondary: #4ccdc4;
+  --color-secondary-foreground: #1a1a2e;
+  --color-secondary-light: #81dad4;
+  --color-muted: #1f2e47;
+  --color-muted-foreground: #9ca3b0;
+  --color-accent: #1f2e47;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #dc2828;
+  --color-destructive-foreground: #fafafa;
+  --color-border: #493e6a;
+  --color-input: #493e6a;
+  --color-ring: #ea435c;
+  --color-warning: #ffd53d;
+  --color-subtle: #6b7280;
+  --color-surface-elevated: #1f2e47;
+  --color-border-light: rgba(255, 255, 255, 0.1);
+}

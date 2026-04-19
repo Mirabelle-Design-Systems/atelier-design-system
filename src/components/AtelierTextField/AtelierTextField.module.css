@@ -1,0 +1,127 @@
+/* ---- Root ---- */
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1-5);
+  width: 100%;
+}
+
+/* ---- Label ---- */
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-line-height-tight);
+  color: var(--color-foreground);
+  cursor: pointer;
+  user-select: none;
+}
+
+.labelDisabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.requiredMark {
+  color: var(--color-destructive);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ---- Description ---- */
+
+.description {
+  margin: 0;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-line-height-tight);
+  color: var(--color-muted-foreground);
+}
+
+/* ---- Input ---- */
+
+.input {
+  width: 100%;
+  display: block;
+  font-family: var(--font-family-sans);
+  color: var(--color-foreground);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-input);
+  border-radius: var(--radius-md);
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.input::placeholder {
+  color: var(--color-muted-foreground);
+  opacity: 1;
+}
+
+.input:hover:not(:disabled):not([readonly]) {
+  border-color: var(--color-foreground);
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+  border-color: var(--color-ring);
+}
+
+.input:disabled {
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.input[readonly] {
+  background-color: var(--color-muted);
+  cursor: default;
+}
+
+.inputInvalid,
+.inputInvalid:hover {
+  border-color: var(--color-destructive);
+}
+
+.inputInvalid:focus-visible {
+  outline-color: var(--color-destructive);
+  border-color: var(--color-destructive);
+}
+
+/* ---- Sizes ---- */
+
+.size-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-tight);
+  padding: var(--spacing-1-5) var(--spacing-2);
+  min-height: 2rem;
+}
+
+.size-md {
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-normal);
+  padding: var(--spacing-2) var(--spacing-3);
+  min-height: 2.5rem;
+}
+
+.size-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--font-line-height-relaxed);
+  padding: var(--spacing-3) var(--spacing-4);
+  min-height: 3rem;
+}
+
+/* ---- Error ---- */
+
+.error {
+  margin: 0;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-line-height-tight);
+  color: var(--color-destructive);
+  font-weight: var(--font-weight-medium);
+}

@@ -1,0 +1,84 @@
+/* ---- Root ---- */
+
+.root {
+  width: 100%;
+}
+
+.rootVertical {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ---- Tab list ---- */
+
+.tabList {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-muted);
+  padding: var(--spacing-1);
+  gap: var(--spacing-1);
+}
+
+.tabListVertical {
+  flex-direction: column;
+  border-bottom: none;
+  border-right: 1px solid var(--color-border);
+}
+
+/* ---- Tab ---- */
+
+.tab {
+  padding: var(--spacing-2) var(--spacing-4);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: var(--color-foreground);
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab:hover:not(:disabled) {
+  color: var(--color-foreground);
+  background: var(--color-background);
+}
+
+.tabActive {
+  color: var(--color-foreground);
+  border-bottom-color: var(--color-primary);
+  background: var(--color-background);
+}
+
+.tabInactive {
+  color: var(--color-muted-foreground);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: -2px;
+}
+
+.tabDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---- Panel ---- */
+
+.panel {
+  padding-top: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-normal);
+}
+
+.panel:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}

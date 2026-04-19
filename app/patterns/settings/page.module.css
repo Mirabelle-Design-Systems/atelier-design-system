@@ -1,0 +1,31 @@
+.settingsPanel {
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.settingsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-4) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settingsLabel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.settingsTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-foreground);
+}
+
+.settingsDescription {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted-foreground);
+}

@@ -22,5 +22,8 @@ coverage/
 # Build outputs (library)
 dist/
 
+# Storybook static build
+storybook-static/
+
 # Vite
 *.local
